@@ -1,0 +1,466 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+
+/* Form Style */
+.employee-search-form {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 30px 20px;
+}
+.employee-search-form * {
+    font-family: "Poppins", Sans-serif;
+}
+.employee-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-fields-row, .radio-fields-submit {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.single-field label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.single-field label span, .single-radio-field span {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #111111;
+}
+.single-field {
+    flex: 1;
+}
+.single-field input, .single-field select {
+    border: 1px solid #00000036;
+    border-radius: 8px;
+    color: #111111;
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 8px 14px;
+    outline: none;
+}
+.radio-fields-submit {
+    align-items: center;
+    gap: 80px;
+}
+.single-radio-field, .filed-group {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+}
+.single-radio-field.qualifications-field {
+    flex: 1;
+}
+.single-radio-field.form-submit {
+    flex: 0 0 auto;
+    justify-content: flex-end;
+}
+.single-radio-field label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.single-radio-field label input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    transition: all 150ms;
+}
+.single-radio-field label input[type="radio"]:checked {
+    border-width: 5px;
+}
+.qualification-selector .qualification-add-btn {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 8px 45px 8px 20px;
+    background: #718900;
+    border: none;
+    border-radius: 40px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 200ms;
+    position: relative;
+}
+.qualification-selector .qualification-add-btn::before, .qualification-selector .qualification-add-btn::after {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    right: 22px;
+    top: calc(50% - 1px);
+}
+.qualification-selector .qualification-add-btn::after {
+    transform: rotate(90deg);
+}
+.qualification-selector .qualification-add-btn:hover {
+    background: #566900;
+}
+.qualifications, #selected_qualifications {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#selected_qualifications {
+    flex-wrap: wrap;
+}
+#selected_qualifications button {
+    background-color: #71890008;
+    border: 1px solid #718900;
+    border-radius: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #000000;
+    padding: 7px 45px 7px 17px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 200ms;
+    position: relative;
+}
+#selected_qualifications button:hover {
+    background-color: #70890040;
+}
+#selected_qualifications button::before, #selected_qualifications button::after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 2px;
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 1px);
+}
+#selected_qualifications button::before {
+    transform: rotate(-45deg);
+}
+#selected_qualifications button::after {
+    transform: rotate(45deg);
+}
+.qualification-selector {
+    position: relative;
+}
+.qualification-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    background: #fff;
+    border: 0.5px solid #ccc;
+    border-radius: 8px;
+    min-width: 220px;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    list-style: none;
+    padding: 4px 0;
+    margin: 0;
+}
+.qualification-dropdown li {
+    padding: 8px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #333;
+}
+.qualification-dropdown li:hover {
+    background: #f5f5f5;
+}
+.qualification-dropdown .empty {
+    padding: 8px 14px;
+    font-size: 13px;
+    color: #999;
+    font-style: italic;
+    cursor: default;
+}
+.form-submit .form-submit-btn {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 18px;
+    padding: 18px 40px;
+    background-color: #E7C164;
+    color: #ffffff;
+    transition: all 200ms;
+}
+.form-submit .form-submit-btn:hover {
+    background-color: #b6943e;
+}
+/* Form Style */
+
+.form-submit-btn.loading, #load_more_candidates.loading {
+	pointer-events: none;
+	opacity: .8;
+	position: relative;
+	color: transparent;
+}
+.form-submit-btn.loading::after, #load_more_candidates.loading::after {
+	content: "";
+	width: 18px;
+	height: 18px;
+	border: 2px solid #fff;
+	border-top-color: transparent;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: spin .8s linear infinite;
+}
+@keyframes spin {
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+#filter-results-content.loading {
+	pointer-events: none;
+	opacity: .8;
+}
+
+/* Form Results Style */
+.filter-results-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.filter-results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: stretch;
+}
+.single-employee-card {
+    box-shadow: 0px 4px 40px 0px #00000014;
+    border: 1px solid #00000021;
+    border-radius: 12px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.employee-card-header {
+    padding: 15px 23px 19px;
+    background: linear-gradient(254.46deg, rgba(231, 193, 100, 0.24) 0%, rgba(76, 138, 123, 0.24) 120.26%);
+    border-radius: 12px 12px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.employee-bio {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.employee-img, .employee-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+.employee-img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid #ffffff50;
+}
+.employee-title h3 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 500;
+    color: #000000;
+}
+.employee-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+.employee-title h6 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    color: #0000009C;
+}
+.employee-badge {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #E7C164;
+    border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center;
+}
+.employee-badge svg {
+    width: 12px;
+    color: #E7C164;
+}
+.employee-availability {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.employee-availability span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #ffffff;
+    padding: 8px 10px 8px 8px;
+    border-radius: 100px;
+    font-size: 12px;
+    line-height: 1.15;
+    color: #000000;
+}
+.employee-availability span svg {
+    width: 12px;
+    height: 12px;
+}
+.employee-card-footer {
+    padding: 16px 23px 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    justify-content: space-between;
+}
+.experience-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.experience-details .single-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+}
+.experience-details .single-info p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #111111;
+}
+.experience-details .single-info p.industry {
+    text-align: end;
+    line-height: 1.5;
+}
+.qualification-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.qualification-list span {
+    display: inline-block;
+    border: 1px solid #718900;
+    padding: 3px 6px;
+    background-color: #7189000F;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 60px;
+    text-align: center;
+    color: #718900;
+}
+.employee-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.employee-buttons .view-profile-btn {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    display: inline-block;
+    flex: 1;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #E7C164;
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: none;
+    transition: all 200ms;
+}
+.employee-buttons .view-profile-btn:hover {
+    background-color: #b5923f;
+}
+.employee-buttons .message-btn {
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #00000021;
+    background-color: #718900;
+    padding: 12px 36px;
+    border-radius: 8px;
+    flex: 0 0 auto;
+}
+.employee-buttons .message-btn:hover {
+    background-color: #506101;
+}
+.filter-results-content .load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.filter-results-content .load-more .load-more-btn {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #E7C164;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 16px;
+    transition: all 200ms;
+}
+.filter-results-content .load-more .load-more-btn:hover {
+    background-color: #b18e38;
+}
+.empty-candidate-container {
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px 0;
+}
+.empty-candidate-container p {
+    font-size: 18px;
+    margin: 0;
+    color: #111111;
+    font-weight: 500;
+}
+/* Form Results Style */

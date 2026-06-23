@@ -1,0 +1,134 @@
+@media screen and (max-width: 1499px) {
+    /* Form Style */
+    .radio-fields-submit {
+        gap: 24px;
+    }
+    .single-radio-field, .filed-group {
+        gap: 12px;
+    }
+    .single-radio-field label {
+        gap: 4px;
+    }
+    /* Form Style */
+
+    /* Form Results Style */
+    .employee-title h3 {
+        font-size: 20px;
+    }
+    .employee-buttons .view-profile-btn {
+        font-size: 16px;
+    }
+    /* Form Results Style */
+}
+
+
+@media screen and (max-width: 1199px) {
+    /* Form Style */
+    .single-radio-field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .single-radio-field > span {
+        flex: 1 1 100%;
+    }
+    .single-radio-field {
+        row-gap: 8px;
+    }
+    .qualifications {
+        flex-direction: row-reverse;
+    }
+	.filed-group {
+		flex-wrap: wrap;
+		row-gap: 8px;
+	}
+	.qualification-selector .qualification-add-btn, #selected_qualifications button {
+		font-size: 14px;
+	}
+	.qualification-selector .qualification-add-btn {
+		padding: 8px 36px 8px 16px;
+	}
+	#selected_qualifications button {
+		padding: 7px 36px 7px 16px;
+	}
+	.qualification-selector .qualification-add-btn::before, .qualification-selector .qualification-add-btn::after, #selected_qualifications button::before, #selected_qualifications button::after {
+		width: 12px;
+		top: calc(50% - 2px);
+		right: 16px;
+	}
+    /* Form Style */
+
+    /* Form Results Style */
+    .filter-results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Form Results Style */
+}
+
+
+@media screen and (max-width: 991px) {
+    /* Form Style */
+    .employee-search-form {
+        border-radius: 12px;
+        padding: 24px 20px 20px;
+    }
+    .form-fields-row, .radio-fields-submit {
+        flex-direction: column;
+    }
+    .single-field {
+        width: 100%;
+    }
+    .single-radio-field {
+        width: 100%;
+    }
+    .qualifications {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .form-submit .form-submit-btn {
+        font-size: 16px;
+        padding: 16px 40px;
+    }
+    /* Form Style */
+
+    /* Form Results Style */
+    .employee-card-header {
+        padding: 15px 16px;
+    }
+    .employee-card-footer {
+        padding: 15px 16px;
+    }
+    .employee-bio {
+        gap: 12px;
+    }
+    .employee-img img {
+        width: 48px;
+        height: 48px;
+    }
+    .employee-title h3 {
+        font-size: 18px;
+    }
+    .employee-title h6 {
+        font-size: 14px;
+    }
+    .employee-buttons .message-btn {
+        padding: 12px 28px;
+    }
+    .filter-results-content .load-more .load-more-btn {
+        font-size: 16px;
+        padding: 16px 36px;
+    }
+	.qualification-list span {
+		font-size: 14px;
+	}
+    /* Form Results Style */
+}
+
+
+@media screen and (max-width: 767px) {
+    /* Form Results Style */
+    .filter-results-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* Form Results Style */
+}
