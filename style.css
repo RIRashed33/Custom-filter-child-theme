@@ -464,3 +464,280 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     font-weight: 500;
 }
 /* Form Results Style */
+
+/* Candidates Dashboard Style */
+.cdash_layout {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    background: #FDF9EF;
+}
+.cdash_sidebar {
+    width: 380px;
+    flex: 0 0 auto;
+    background: #FFFFFF;
+    padding: 48px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.cdash_sidebar .logo a {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.cdash_menu {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.cdash_menu li {
+    flex: 1;
+    width: 100%;
+}
+.cdash_menu li a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    border: none !important;
+    border-radius: 100px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    background: transparent;
+	transition: all 200ms;
+}
+.cdash_menu li a svg {
+    width: 24px;
+    height: 24px;
+}
+.cdash_menu li a:hover {
+	background: #E7C164;
+	color: #FFFFFF;
+}
+.cdash_sidebar li a.active {
+	font-weight: 600;
+	background: linear-gradient(254.46deg, #E7C164 0%, #4C8A7B 120.26%);
+	color: #FFFFFF;
+}
+.cdash_menu li a.active svg {
+	width: 32px;
+	height: 32px;
+}
+.cdash_main {
+    flex: 1;
+    padding: 40px 50px;
+}
+.cdash_header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+}
+.cdash_header .title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.cdash_header .title h2 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #000000;
+}
+.cdash_header .title p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #394149;
+    margin: 0;
+}
+.cdash_header .profiles {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.cdash_header .profiles .company-profile {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #E7C164;
+    border: none;
+    padding: 18px 24px;
+    border-radius: 16px;
+    transition: all 200ms;
+}
+.cdash_header .profiles .profiles-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.cdash_header .profiles .notification-btn {
+    border: 1px solid #C4C4C4;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.cdash_header .profiles .notification-btn svg {
+    width: 32px;
+    height: 32px;
+}
+.cdash_header .profiles .notification-btn:hover {
+    background-color: #E7C164;
+    color: #ffffff;
+    border-color: #E7C164;
+}
+.cdash_header .profiles .profile-photo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cdash_header .profiles .profile-photo img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+hr.cdash-divider {
+    margin: 30px 0;
+    border-color: #0000001F;
+    border-width: 1px 0 0 0;
+}
+.cdash_main .banner {
+    box-shadow: 0px 4px 40px 0px #E7C1641A;
+    background: linear-gradient(254.46deg, #E7C164 0%, #4C8A7B 120.26%);
+    border-radius: 8px;
+    padding: 30px 40px;
+    margin-bottom: 40px;
+}
+.cdash_main .banner h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.cdash_main .banner p {
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin: 0;
+}
+.cdash_main .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+.cdash_main .section-header h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000000;
+    margin: 0;
+}
+.cdash_main .section-header .btn-view {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #E7C164;
+    border: none;
+    padding: 18px 32px;
+    border-radius: 16px;
+    transition: all 200ms;
+}
+.cdash_main table {
+    width: 100%;
+    border-collapse: separate;
+    background: #FFFFFF99;
+    border-radius: 16px;
+    border: 1px solid #E7C1648F;
+    overflow: hidden;
+}
+.cdash_main table thead {
+    background: #E7C16433;
+}
+.cdash_main table thead th {
+    border: none !important;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    font-weight: 500;
+    text-align: start;
+    padding: 18px;
+}
+.cdash_main table thead th:first-child {
+    padding-left: 64px;
+}
+.cdash_main table tbody tr:not(tr:last-child) td {
+    border-bottom: 1px solid #0000000F !important;
+}
+.cdash_main table tbody tr td {
+    border: none !important;
+    background: transparent !important;
+    padding: 18px;
+    align-content: space-around;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #000000;
+}
+.cdash_main table tbody tr td:first-child {
+    padding-left: 32px;
+}
+.cdash_main table tbody tr td .row-name, .cdash_main table tbody tr td .date-cell {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+	font-weight: 500;
+}
+.cdash_main table tbody tr td .date-cell  {
+	gap: 10px;
+}
+.cdash_main table tbody tr td .date-cell svg {
+	width: 20px;
+	height: 20px;
+}
+.cdash_main table tbody tr td .row-name img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    flex: 0 0 auto;
+}
+.cdash_main table tbody tr td .action-btn {
+    border: none;
+    padding: 12px 14px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background: transparent;
+}
+.cdash_main table tbody tr td .action-btn svg {
+    width: 24px;
+    height: 24px;
+}
+.cdash_main table tbody tr td .action-btn:hover {
+    background: #E7C164;
+    color: #fff;
+}
+/* Candidates Dashboard Style */

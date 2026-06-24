@@ -19,8 +19,17 @@
         font-size: 16px;
     }
     /* Form Results Style */
+	
+	/* Candidates Dashboard Style */
+	.cdash_sidebar {
+		width: 300px;
+		padding: 48px 20px;
+	}
+	.cdash_main {
+		padding: 40px 24px;
+	}
+	/* Candidates Dashboard Style */
 }
-
 
 @media screen and (max-width: 1199px) {
     /* Form Style */
@@ -62,8 +71,36 @@
         grid-template-columns: repeat(2, 1fr);
     }
     /* Form Results Style */
-}
 
+	/* Candidates Dashboard Style */
+	.cdash_header .title h2 {
+		font-size: 30px;
+	}
+	.cdash_header .title p {
+		font-size: 16px;
+	}
+	.cdash_header .profiles .company-profile {
+		font-size: 16px;
+		padding: 16px 20px;
+		border-radius: 12px;
+	}
+	.cdash_header .profiles {
+		gap: 12px;
+	}
+	.cdash_header .profiles .notification-btn {
+		padding: 13px;
+	}
+	.cdash_header .profiles .notification-btn svg {
+		width: 28px;
+		height: 28px;
+	}
+	.cdash_header .profiles .profile-photo img {
+		width: 56px;
+		height: 56px;
+	}
+	
+	/* Candidates Dashboard Style */
+}
 
 @media screen and (max-width: 991px) {
     /* Form Style */
@@ -122,8 +159,27 @@
 		font-size: 14px;
 	}
     /* Form Results Style */
+	
+	/* Candidates Dashboard Style */
+	.cdash_layout {
+		flex-direction: column;
+	}
+	aside.cdash_sidebar {
+		width: 100%;
+		padding: 32px 15px;
+		gap: 32px;
+	}
+	main.cdash_main {
+		padding: 40px 15px;
+	}
+	.cdash_table {
+		overflow: auto;
+	}
+	.cdash_main table {
+		min-width: 650px;
+	}
+	/* Candidates Dashboard Style */
 }
-
 
 @media screen and (max-width: 767px) {
     /* Form Results Style */
@@ -131,4 +187,46 @@
         grid-template-columns: repeat(1, 1fr);
     }
     /* Form Results Style */
+
+	/* Candidates Dashboard Style */
+	.cdash_header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.cdash_main .banner {
+		padding: 24px 20px;
+	}
+	.cdash_main .banner h3 {
+		font-size: 24px;
+		margin-bottom: 16px;
+	}
+	.cdash_main .banner p {
+		font-size: 16px;
+	}
+	.cdash_main .section-header h3 {
+		font-size: 24px;
+	}
+	.cdash_main .section-header {
+		flex-direction: column;
+		align-items: flex-start;
+		text-align: start;
+		gap: 16px;
+	}
+	.cdash_main .section-header .btn-view {
+		font-size: 16px;
+		padding: 16px 24px;
+	}
+	.cdash_main table thead th {
+		font-size: 18px;
+	}
+	.cdash_main table tbody tr td {
+		font-size: 16px;
+	}
+	.cdash_main table tbody tr td:first-child {
+		padding-left: 16px;
+	}
+	.cdash_main table tbody tr td {
+		padding: 12px;
+	}
+	/* Candidates Dashboard Style */
 }
